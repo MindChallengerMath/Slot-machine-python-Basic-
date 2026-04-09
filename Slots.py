@@ -53,10 +53,14 @@ def main():
 
 
     
-
+running = True
 if __name__ == "__main__":
-    main()
-    print("-------------------------")
-    print("Final Score")
-    print("-------------------------")
-    print(f"{points} points!") 
+    while running:
+        main()
+        print("-------------------------")
+        print("Final Score")
+        print("-------------------------")
+        print(f"{points} points!") 
+        restart = input("Play again?(Y/N): ").capitalize()
+        if restart == "N":
+             running = False
