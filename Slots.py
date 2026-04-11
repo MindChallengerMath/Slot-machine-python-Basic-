@@ -56,6 +56,7 @@ def main():
 running = True
 if __name__ == "__main__":
     while running:
+        points = 0
         main()
         print("-------------------------")
         print("Final Score")
